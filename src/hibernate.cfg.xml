@@ -1,0 +1,29 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">$uyu</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/tscseit</property>
+        <property name="hibernate.connection.autocommit">true</property>
+       <!--  <property name="hibernate.hbm2ddl.auto">create</property>  --> 
+      <property name="hibernate.show_sql">true</property>
+       <property name="hibernate.cache.use_second_level_cache">false</property>
+        <mapping class="com.tsc.model.User"/>
+		<mapping class="com.tsc.model.Address"/>  
+		<mapping class="com.tsc.model.Branch"/>  
+		<mapping class="com.tsc.model.Vehicle"/>
+		<mapping class="com.tsc.model.Role"/>
+		<mapping class="com.tsc.model.Service"/>
+		<mapping class="com.tsc.model.ServiceType"/>
+		<mapping class="com.tsc.model.PassVerification"/>
+	
+		<mapping class="com.tsc.model.ServiceRegistry"/>
+		<mapping class="com.tsc.model.Slot"/>
+		
+    </session-factory>
+</hibernate-configuration>

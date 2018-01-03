@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+    <definition name="user.definition"  
+        template="/resources/pages/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/resources/pages/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/resources/pages/footer.jsp" /> 
+    </definition>
+    
+     <definition name="nonuser.definition"  
+        template="/resources/pages/layout.jsp">  
+        <put-attribute name="body" value="" />  
+         <put-attribute name="header" value="/resources/pages/signoutuserheader.jsp" />  
+         <put-attribute name="title" value="" />
+        <put-attribute name="footer" value="/resources/pages/footer.jsp" /> 
+         
+    </definition>  
+    
+      <definition name="admin.definition"  
+        template="/resources/pages/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/resources/pages/sidebar.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/resources/pages/footer.jsp" /> 
+        
+    </definition>
+  
+   
+  
+    
+    <definition name="addservice" extends="admin.definition">  
+        <put-attribute name="title" value="serviceadd" />  
+        <put-attribute name="body" value="/resources/pages/addservice.jsp" />  
+    </definition> 
+  
+    <definition name="viewvehicles" extends="admin.definition">  
+        <put-attribute name="title" value="view vehicles" />  
+        <put-attribute name="body" value="/resources/pages/viewvehicles.jsp" />  
+    </definition> 
+  
+  
+    <definition name="viewservicecenter" extends="admin.definition">  
+        <put-attribute name="title" value="view Service center " />  
+        <put-attribute name="body" value="/resources/pages/viewservicecenter.jsp" /> 
+    </definition>  
+    
+    <definition name="transaction" extends="admin.definition">  
+        <put-attribute name="title" value="view transaction" />  
+        <put-attribute name="body" value="/resources/pages/transaction.jsp" /> 
+    </definition>   
+    
+     <definition name="myservicecenters" extends="user.definition">  
+        <put-attribute name="title" value="view transaction" />  
+        <put-attribute name="body" value="/resources/pages/myservicecenters.jsp" /> 
+    </definition>   
+    
+    <definition name="addservicecenter" extends="admin.definition">  
+        <put-attribute name="title" value="servicecenteradd" />  
+        <put-attribute name="body" value="/resources/pages/addservicecenter.jsp" />  
+    </definition> 
+    
+    <definition name="addvehicle" extends="admin.definition">  
+        <put-attribute name="title" value="add vehicle" />  
+        <put-attribute name="body" value="/resources/pages/addvehicle.jsp" />  
+    </definition> 
+    
+    <definition name="contactus" extends="nonuser.definition">  
+        <put-attribute name="title" value="contact us" />  
+        <put-attribute name="body" value="/resources/pages/contactus.jsp" />  
+    </definition> 
+    
+    <definition name="userregistration" extends="admin.definition">  
+        <put-attribute name="title" value="Add User" />  
+        <put-attribute name="body" value="/resources/pages/userregistration.jsp" />  
+    </definition> 
+    
+    
+    <definition name="login" extends="nonuser.definition">  
+        <put-attribute name="title" value="log in" />  
+        <put-attribute name="body" value="/resources/pages/login.jsp" />  
+    </definition> 
+    
+    <definition name="changepassword" extends="user.definition">  
+        <put-attribute name="title" value="change password" />  
+        <put-attribute name="body" value="/resources/pages/changepassword.jsp" />  
+    </definition> 
+    
+    
+    <definition name="homepage" extends="nonuser.definition">  
+        <put-attribute name="title" value="home page" />  
+        <put-attribute name="body" value="/resources/pages/homepage.jsp" />  
+    </definition> 
+    
+    
+        
+    <definition name="test2" extends="nonuser.definition">  
+        <put-attribute name="title" value="test1" />  
+        <put-attribute name="body" value="/resources/pages/test2.jsp" />  
+    </definition> 
+    
+    <definition name="userservices" extends="user.definition">  
+        <put-attribute name="title" value="View Services" />  
+        <put-attribute name="body" value="/resources/pages/userservices.jsp" />  
+    </definition> 
+    
+    <definition name="viewusers" extends="admin.definition">  
+        <put-attribute name="title" value="View Services" />  
+        <put-attribute name="body" value="/resources/pages/viewusers.jsp" />  
+    </definition> 
+    
+    
+     <definition name="userprofile" extends="user.definition">  
+        <put-attribute name="title" value="View user" />  
+        <put-attribute name="body" value="/resources/pages/userprofile.jsp" />  
+    </definition>
+
+	    
+     <definition name="bookslot" extends="user.definition">  
+        <put-attribute name="title" value="book slot" />  
+        <put-attribute name="body" value="/resources/pages/bookslot.jsp" />  
+    </definition>  
+    
+       <definition name="aboutus" extends="nonuser.definition">  
+        <put-attribute name="title" value="about us" />  
+        <put-attribute name="body" value="/resources/pages/aboutus.jsp" />  
+    </definition>
+    
+</tiles-definitions>  
