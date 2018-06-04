@@ -30,7 +30,6 @@
 		<intercept-url pattern="/js/**" filters="none" />
 		<intercept-url pattern="/img/**" filters="none" />
 		
-		<intercept-url pattern="/select.html"  access="ROLE_USER,ROLE_ADMIN"/>
 		<intercept-url pattern="/logout" access="ROLE_USER,ROLE_ADMIN" />
 			
 		

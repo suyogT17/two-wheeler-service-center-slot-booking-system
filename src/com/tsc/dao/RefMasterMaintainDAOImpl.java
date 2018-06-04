@@ -193,7 +193,7 @@ public class RefMasterMaintainDAOImpl<T> extends AbstractDAO {
 	 * 
 	 */
 	@SuppressWarnings("unchecked")
-	public T findById(Class<T> entityType, Long id)  {
+	public T findById(Class<T> entityType, Integer id)  {
 		return (T) this.getSession().load(entityType, id);
 	}
 

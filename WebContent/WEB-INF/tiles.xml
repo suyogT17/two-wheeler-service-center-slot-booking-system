@@ -29,6 +29,39 @@
         
     </definition>
   
+    
+    <definition name="next" extends="admin.definition">  
+        <put-attribute name="title" value="mynext" />  
+        <put-attribute name="body" value="/resources/pages/next.jsp" />  
+    </definition> 
+    
+     <definition name="next2" extends="admin.definition">  
+        <put-attribute name="title" value="mynext" />  
+        <put-attribute name="body" value="/resources/pages/next2.jsp" />  
+    </definition> 
+    
+    
+     <definition name="next3" extends="admin.definition">  
+        <put-attribute name="title" value="mynext" />  
+        <put-attribute name="body" value="/resources/pages/next3.jsp" />  
+    </definition> 
+    
+     <definition name="next4" extends="admin.definition">  
+        <put-attribute name="title" value="mynext" />  
+        <put-attribute name="body" value="/resources/pages/next4.jsp" />  
+    </definition>  
+     
+    <definition name="stegno" extends="admin.definition">  
+        <put-attribute name="title" value="mystegno" />  
+        <put-attribute name="body" value="/resources/pages/stegno.jsp" />  
+    </definition> 
+    
+     
+    <definition name="addservice" extends="admin.definition">  
+        <put-attribute name="title" value="serviceadd" />  
+        <put-attribute name="body" value="/resources/pages/addservice.jsp" />  
+    </definition> 
+   
    
   
     

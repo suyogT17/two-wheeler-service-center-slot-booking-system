@@ -67,17 +67,16 @@ public class SlotBookService {
 		//SystemConstants.ORDER_CONFIRMATION_MAIL.append("cost: "+cost);
 		slot.setBcost(cost);
 		//cost=0;
-		Branch b=new Branch();
-		b.setBranchId(Integer.parseInt(slot.getBranchIds()));
+		Branch b=(Branch) refMasterMaintainDAOImpl.findById(Branch.class, Integer.parseInt(slot.getBranchIds()));
+	
 		
 		slot.setBranch(b);
 		
-		Vehicle v=new Vehicle();
-		v.setVehicleId(Integer.parseInt(slot.getVehicleIds()));		
 		
-		slot.setVehicle(v);
+		Vehicle vehicle=(Vehicle) refMasterMaintainDAOImpl.findById(Vehicle.class,Integer.parseInt(slot.getVehicleIds()));
+		slot.setVehicle(vehicle);
 		
-		String username=Helper.getUsername();
+		String username=Helper.getUsername(); 
 		Integer userid=0;
 		String email=null;
 		
@@ -89,11 +88,11 @@ public class SlotBookService {
 		{
 			userid=userList.get(0).getUserId();
 			email=userList.get(0).getEmailId();
+			slot.setUser(userList.get(0));
 		}
 		
-		User u=new User();
-		u.setUserId(userid);
-		slot.setUser(u);
+
+	
 		try {
 			 OTP="TWSC"+Helper.generatePin();
 			slot.setbOTP(OTP);
