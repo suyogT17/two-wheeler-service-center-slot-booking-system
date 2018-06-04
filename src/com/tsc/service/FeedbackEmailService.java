@@ -17,8 +17,8 @@ public class FeedbackEmailService {
 
 	public static Boolean sendEmaill(String body,String subject,String emailId)
 	{
-		 final String username ="twscfeedback@gmail.com" ;
-		 final String password ="twsc1234";
+		 final String username ="" ;
+		 final String password ="";
 
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
